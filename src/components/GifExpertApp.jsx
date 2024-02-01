@@ -6,7 +6,6 @@ export const GifExpertApp = () => {
 
     const [categories, setCategories] = useState(['One punch']);
     const [value, setValue] = useState('');
-    console.log(categories);
 
     const addCategory = (newCategory) => {
 
@@ -14,12 +13,6 @@ export const GifExpertApp = () => {
         setCategories([...categories, newCategory])
     
     }
-
-
-    const onHandleChange = (event) => {
-        setValue(event.target.value);
-    }
-
     return(
         <>
             {/* titulo */}
